@@ -11,5 +11,7 @@ const app = firebase.initializeApp({
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 });
 
+app.analytics();
+
 export const auth = app.auth();
 export default app;
